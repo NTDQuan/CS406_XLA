@@ -1,0 +1,55 @@
+.ImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.InputImage {
+    width: 50%;
+    height: 600px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.InputImage img {
+    max-width: 100%; /* Ảnh không vượt quá kích thước của div */
+    max-height: 100%;
+    vertical-align: middle;
+}
+
+.OutputImage {
+    width: 50%;
+    height: 600px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.OutputImage img {
+    max-width: 100%; /* Ảnh không vượt quá kích thước của div */
+    max-height: 100%;
+    vertical-align: middle;
+}
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+  }
